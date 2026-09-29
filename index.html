@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Bousabaa Doha</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome pour les icônes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Sidebar / Barre latérale gauche (Marron Aesthetic) -->
+  <aside class="sidebar">
+    <div class="sidebar-profile">
+      <h3>Doha BOUSABAA</h3>
+      <p class="subtitle">Étudiante en BTS SIO<br>Option SLAM / SISR</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <ul>
+        <li><a href="#accueil" class="active"><i class="fa-solid fa-house"></i> Accueil</a></li>
+        <li><a href="#a-propos"><i class="fa-solid fa-user"></i> À propos</a></li>
+        <li><a href="#parcours"><i class="fa-solid fa-graduation-cap"></i> Parcours</a></li>
+        <li><a href="#competences"><i class="fa-solid fa-code"></i> Compétences</a></li>
+        <li><a href="#projets"><i class="fa-solid fa-folder-open"></i> Projets</a></li>
+        <li class="sub-item"><a href="#projets-scolaires">Projets scolaires</a></li>
+        <li class="sub-item"><a href="#projets-professionnels">Projets professionnels</a></li>
+        <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Contenu Principal -->
+  <main class="main-content">
+
+    <!-- Section Hero / Accueil (Sans photo, centré) -->
+    <section id="accueil" class="section hero-section">
+      <div class="hero-text-centered">
+        <span class="category-title">PORTFOLIO</span>
+        <h1>Doha BOUSABAA</h1>
+        <h2>Étudiante en informatique<br>Développement d'applications</h2>
+        <p class="section-desc">1re année BTS SIO - Option SLAM</p>
+        <div class="hero-buttons">
+          <a href="#projets-scolaires" class="btn">Voir les projets</a>
+          <a href="#" class="btn">Voir mon CV</a>
+          <a href="#contact" class="btn">Me contacter</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section À Propos -->
+    <section id="a-propos" class="section">
+      <span class="category-title">À PROPOS DE MOI</span>
+      <h2>Profil</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Je suis actuellement étudiante en <strong>BTS Services Informatiques aux Organisations</strong> (option <strong>SLAM</strong>), une formation que je suis à distance via le <strong>CNED</strong>.<br><br>
+          </p>
+          <p>
+            Après avoir obtenu un <strong>baccalauréat général (spécialités SVT et Mathématiques)</strong>, je me suis orientée vers le BTS SIO. Cette formation correspond parfaitement à mon intérêt pour l’informatique et plus particulièrement pour le développement d’applications.<br><br>
+          </p>
+          <p>
+            Mon objectif est d’acquérir des compétences solides en développement web et logiciel afin de devenir <strong>développeuse web</strong>.
+          </p>
+          <p>
+            Motivée, curieuse et autonome, j’ai choisi la voie du CNED pour travailler à mon rythme tout en me consacrant pleinement à ma passion pour le code et la création de solutions numériques.
+          </p>
+        </div>
+        <div class="card search-card"><br>
+          <h3 class="highlight-title">Recherche de stage</h3><br>
+          <p>Je suis actuellement à la recherche d'un stage de <strong>4 à 5 semaines</strong> à réaliser entre <strong>mai et août 2027</strong>.</p>
+        </div>
+      </div>
+
+      <!-- Compteurs / Stats -->
+      <div class="stats-grid">
+        <div class="card stat-card">
+          <i class="fa-solid fa-code icon-aesthetic"></i>
+          <span class="stat-number">2</span>
+          <span class="stat-label">Projets réalisés</span>
+        </div>
+        <div class="card stat-card">
+          <i class="fa-solid fa-bars-progress icon-aesthetic"></i>
+          <span class="stat-number">4</span>
+          <span class="stat-label">Projets à venir</span>
+        </div>
+        <div class="card stat-card">
+          <i class="fa-solid fa-sitemap icon-aesthetic"></i>
+          <span class="stat-number">14</span>
+          <span class="stat-label">Outils et technologies</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION PARCOURS -->
+    <section id="parcours" class="section">
+      <span class="category-title">FORMATION & EXPÉRIENCES</span>
+      <h2>Parcours</h2>
+
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+
+        <!-- 1. BTS SIO -->
+        <div class="timeline-item item-bts">
+          <div class="timeline-badge badge-bts">Sept. 2025 - Aujourd'hui</div>
+          <div class="timeline-dot dot-bts"></div>
+          <div class="card timeline-card card-bts">
+            <h3>1re année BTS SIO - Option SLAM</h3>
+            <span class="location">CNED de Poitiers</span>
+            <p>Formation préparant aux métiers du développement d'applications, du développement web, de la gestion des bases de données, de la conception logicielle et de la cybersécurité applicative.</p>
+            <button type="button" class="btn btn-sm" onclick="openModal()">En savoir plus</button>
+          </div>
+        </div>
+
+        <!-- 2. BACCALAURÉAT -->
+        <div class="timeline-item item-bac">
+          <div class="timeline-badge badge-bac">Juin 2025</div>
+          <div class="timeline-dot dot-bac"></div>
+          <div class="card timeline-card card-bac">
+            <h3>Baccalauréat général</h3>
+            <span class="location">Lycée Philippe Lamour, Nîmes</span>
+            <p>Obtention du baccalauréat général, Spécialités SVT et Mathématiques.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FENÊTRE MODALE -->
+    <div id="modal-bts" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h3>BTS SIO - Option SLAM</h3>
+        <br>
+        <p>
+          Le <strong>BTS Services Informatiques aux Organisations (SIO)</strong> forme des techniciens supérieurs spécialisés dans le développement d'applications (option SLAM) ou la gestion des systèmes et réseaux (option SISR).
+        </p>
+        <br>
+        <p>
+          L'<strong>option SLAM (Solutions Logicielles et Applications Métiers)</strong> est orientée vers le développement, la maintenance et l'évolution d'applications informatiques, les bases de données, les technologies web, le génie logiciel et la cybersécurité applicative.
+        </p>
+      </div>
+    </div>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="section">
+      <span class="category-title">EN COURS D'ACQUISITION</span>
+      <h2>Compétences</h2>
+
+      <div class="skills-container-grid">
+        <div class="skills-category">
+          <h3>Développement Web & Applications</h3>
+          <div class="skills-cards-grid">
+            <div class="card skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#"><span>C#</span></div>
+            <div class="card skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+            <div class="card skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"><span>Java</span></div>
+            <div class="card skill-card"><img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="PHP"><span>PHP</span></div>
+            <div class="card skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"><span>HTML</span></div>
+            <div class="card skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"><span>CSS</span></div>
+            <div class="card skill-card"><img src="https://static.vecteezy.com/system/resources/previews/027/127/560/non_2x/javascript-logo-javascript-icon-transparent-free-png.png" alt="JavaScript"><span>JavaScript</span></div>
+            <div class="card skill-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR824iW2asIC3ZJmSt5GhKaU_kOldjxWU4TPOaDt06jcw&s=10" alt="SQL"><span>SQL</span></div>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3>Outils & environnements</h3>
+          <div class="skills-cards-grid">
+            <div class="card skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><span>Git & GitHub</span></div>
+            <div class="card skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" alt="VS"><span>Visual Studio</span></div>
+            <div class="card skill-card"><img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" alt="NetBeans"><span>NetBeans</span></div>
+            <div class="card skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" alt="Eclipse"><span>Eclipse</span></div>
+            <div class="card skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" alt="PyCharm"><span>PyCharm</span></div>
+            <div class="card skill-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_DnoIC1NyrfKEcfwvzaY01THkmzXS8LLmqQcDM1YDkA&s=10" alt="Wamp"><span>WampServer</span></div>
+            <div class="card skill-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvfOnTRlelR89qJvJJlUs22eQm9FIWTeFSpRyusdb3Iw&s=10" alt="VirtualBox"><span>VirtualBox</span></div>
+            <div class="card skill-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSRTDkOhEDE6aAKG5itYMx7GQjhWUtEXkQNv7vopbuKg&s=10" alt="WordPress"><span>WordPress</span></div>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3>Bases de données</h3>
+          <div class="skills-cards-grid">
+            <div class="card skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><span>MySQL</span></div>
+            <div class="card skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"><span>PostgreSQL</span></div>
+            <div class="card skill-card"><img src="https://img.icons8.com/color/1200/mongodb.jpg" alt="MongoDB"><span>MongoDB</span></div>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3>Méthodes de conception</h3>
+          <div class="skills-cards-grid">
+            <div class="card skill-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyJm_c8f14KCorI6cKs5szIElF9kCxThle5ISZ1PNf3g&s=10" alt="Merise"><span>Merise</span></div>
+            <div class="card skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unifiedmodelinglanguage/unifiedmodelinglanguage-original.svg" alt="UML"><span>UML</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Projets globale -->
+    <div id="projets" class="projects-wrapper-section">
+      
+      <!-- 1. PROJETS SCOLAIRES -->
+      <section id="projets-scolaires" class="projects-sub-section">
+        <span class="category-title">RÉALISATIONS ACADÉMIQUES</span>
+        <h2 class="section-title">Projets scolaires</h2>
+        
+        <div class="projects-grid">
+          <!-- Contacts -->
+          <div class="project-card">
+            <div class="card-img"><img src="Projets/scolaires/contact.png" alt="Projet Contacts"></div>
+            <div class="card-body">
+              <span class="project-date">2026 - en cours</span>
+              <h4 class="project-title">Contacts</h4>
+              <p class="project-desc">Création d'une <strong>application de bureau</strong> pour mémoriser les informations de contacts, avec sérialisation et gestion dynamique des couleurs.</p>
+              <div class="project-tags"><span class="tag">C#</span><span class="tag">Sérialisation</span></div>
+              <a href="https://github.com/ton-profil/projet-1" target="_blank" class="github-link">Projet sur GitHub</a>
+            </div>
+          </div>
+
+          <!-- Nolark -->
+          <div class="project-card">
+            <div class="card-img"><img src="Projets/scolaires/nolark.png" alt="Projet Nolark"></div>
+            <div class="card-body">
+              <span class="project-date">2026 - en cours</span>
+              <h4 class="project-title">Nolark</h4>
+              <p class="project-desc">Correction et évolution d'un site vitrine de casques de moto exploitant une BDD : respect du RGPD, déploiement, référencement.</p>
+              <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span><span class="tag">MySQL</span></div>
+              <a href="https://github.com/ton-profil/projet-2" target="_blank" class="github-link">Projet sur GitHub</a>
+            </div>
+          </div>
+
+          <!-- Le site de mon client -->
+          <div class="project-card">
+            <div class="card-img"><img src="Projets/scolaires/le site de mon client.png" alt="Projet Client"></div>
+            <div class="card-body">
+              <span class="project-date">2026 - à venir</span>
+              <h4 class="project-title">Le site de mon client</h4>
+              <p class="project-desc">Découverte de WordPress à travers la création des bases d'un site e-commerce.</p>
+              <div class="project-tags"><span class="tag">WordPress</span><span class="tag">MySQL</span><span class="tag">WooCommerce</span></div>
+              <a href="https://github.com/ton-profil/projet-3" target="_blank" class="github-link">Projet sur GitHub</a>
+            </div>
+          </div>
+
+          <!-- Centre de formation -->
+          <div class="project-card">
+            <div class="card-img"><img src="Projets/scolaires/centre de formation informatique.png" alt="Centre de formation"></div>
+            <div class="card-body">
+              <span class="project-date">2026 - à venir</span>
+              <h4 class="project-title">Centre de formation informatique</h4>
+              <p class="project-desc">Évolution d'un site vitrine : CGU, formulaire de contact, portabilité, liste de diffusions et campagne d'emailing.</p>
+              <div class="project-tags"><span class="tag">WordPress</span><span class="tag">MySQL</span></div>
+              <a href="https://github.com/ton-profil/projet-4" target="_blank" class="github-link">Projet sur GitHub</a>
+            </div>
+          </div>
+
+          <!-- Jeu de combat 2D -->
+          <div class="project-card">
+            <div class="card-img"><img src="Projets/scolaires/jeu de combat 2D.png" alt="Jeu de combat 2D"></div>
+            <div class="card-body">
+              <span class="project-date">2027 - à venir</span>
+              <h4 class="project-title">Jeu de combat 2D</h4>
+              <p class="project-desc">Création d'un jeu multijoueur 2D. Gestion des attaques (boule de feu) dans un thread indépendant.</p>
+              <div class="project-tags"><span class="tag">Java</span><span class="tag">Thread</span><span class="tag">Socket</span><span class="tag">MVC</span></div>
+              <a href="https://github.com/ton-profil/projet-5" target="_blank" class="github-link">Projet sur GitHub</a>
+            </div>
+          </div>
+
+          <!-- Habilitations -->
+          <div class="project-card">
+            <div class="card-img"><img src="Projets/scolaires/habilitations.png" alt="Habilitations"></div>
+            <div class="card-body">
+              <span class="project-date">2027 - à venir</span>
+              <h4 class="project-title">Habilitations</h4>
+              <p class="project-desc">Application de bureau pour gérer l'attribution d'habilitations aux ressources, avec accès authentifié.</p>
+              <div class="project-tags"><span class="tag">C#</span><span class="tag">MySQL</span></div>
+              <a href="https://github.com/ton-profil/projet-6" target="_blank" class="github-link">Projet sur GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. PROJETS PROFESSIONNELS -->
+      <section id="projets-professionnels" class="projects-sub-section pro-section-spacing">
+        <span class="category-title">EXPÉRIENCE EN ENTREPRISE</span>
+        <h2 class="section-title">Projets professionnels</h2>
+        
+        <div class="projects-grid">
+          <!-- Gestion des absences -->
+          <div class="project-card">
+            <div class="card-img"><img src="Projets/professionnels/gestion des absences.png" alt="Gestion des absences"></div>
+            <div class="card-body">
+              <span class="project-date">2027 - à venir</span>
+              <h4 class="project-title">Gestion des absences</h4>
+              <p class="project-desc">Application de bureau pour gérer les absences du personnel d'une médiathèque, avec accès authentifié.</p>
+              <div class="project-tags"><span class="tag">C#</span><span class="tag">MySQL</span></div>
+              <div class="card-actions">
+                <a href="https://github.com/ton-profil/projet-absences" target="_blank" class="github-link">Projet sur GitHub</a>
+                <a href="#" class="more-info-link">Plus d'informations</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet de stage -->
+          <div class="project-card">
+            <div class="card-img"><img src="Projets/professionnels/projet de stage.png" alt="Projet de stage"></div>
+            <div class="card-body">
+              <span class="project-date">2027 - à venir</span>
+              <h4 class="project-title">Projet de stage</h4>
+              <p class="project-desc">Projet qui sera réalisé durant le stage de première année de BTS SIO.</p>
+              <div class="card-actions">
+                <a href="https://github.com/ton-profil/projet-stage" target="_blank" class="github-link">Projet sur GitHub</a>
+                <a href="#" class="more-info-link">Plus d'informations</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section contact-section-spacing">
+      <span class="category-title">ÉCHANGEONS ENSEMBLE</span>
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="card contact-card"><i class="fa-solid fa-location-dot icon-aesthetic"></i><span>Nîmes (Gard)</span></div>
+          <div class="card contact-card"><i class="fa-solid fa-phone icon-aesthetic"></i><span>06 52 88 90 29</span></div>
+          <div class="card contact-card"><i class="fa-solid fa-envelope icon-aesthetic"></i><span>bousabaa.doha@gmail.com</span></div>
+          <div class="card contact-card"><i class="fa-brands fa-linkedin icon-aesthetic"></i><span>linkedin.com/in/doha-bousabaa</span></div>
+        </div>
+        <form class="contact-form">
+          <div class="form-group">
+            <label>Nom</label>
+            <input type="text" class="form-input">
+          </div>
+          <div class="form-group">
+            <label>E-mail</label>
+            <input type="email" class="form-input">
+          </div>
+          <div class="form-group">
+            <label>Objet</label>
+            <input type="text" class="form-input">
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea class="form-input" rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn-submit">Envoyer</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    function openModal() {
+      document.getElementById("modal-bts").style.display = "flex";
+    }
+
+    function closeModal() {
+      document.getElementById("modal-bts").style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      const modal = document.getElementById("modal-bts");
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
+</body>
+</html>
